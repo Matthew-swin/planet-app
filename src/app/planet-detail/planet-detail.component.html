@@ -1,0 +1,12 @@
+<div>
+    <h1>{{Planet.name}}</h1>
+    <div>
+        <h4>Number of moons: {{Planet.moons}} </h4>
+
+
+        <h4>distance from the sun: {{Planet.distanceFromSun}} km</h4>
+        <button #delete (click)="DeletePlanet(this.Planet.name)"> Delete</button>
+    </div>
+    <img src="https://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg" alt="" width="500" height="600">
+
+</div>
