@@ -5,8 +5,17 @@
 
 
         <h4>distance from the sun: {{Planet.distanceFromSun}} km</h4>
-        <button #delete (click)="DeletePlanet(this.Planet.name)"> Delete</button>
+        <button *ngIf="!editing" (click)="startEditing()">Edit</button>
+        
+            <input #planetName type="text" [value]="Planet.name">
+            <input #planetMoons type="text" [value]="Planet.moons">
+            <input #planetDistance type="text" [value]="Planet.distanceFromSun">
+        
+        <button *ngIf="editing"
+            (click)="stopEditing(planetName.value,planetMoons.value,planetDistance.value)">Save</button>
+        <button *ngIf="!editing" #delete (click)="DeletePlanet(this.Planet.name)"> Delete</button>
     </div>
-    <img src="https://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg" alt="" width="500" height="600">
+    <img  src={{Planet.Url}} alt="" width="300"
+        height="300">
 
 </div>

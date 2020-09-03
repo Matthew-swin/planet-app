@@ -15,8 +15,8 @@ export class PlanetsCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public CreatePlanet(name:string, moons: 0, distance:number){
-  this.PlanetService.addPlanet(name,moons,distance);
+  public CreatePlanet(name:string, moons: 0, distance:number, Url: string){
+  this.PlanetService.addPlanet(name,moons,distance,Url);
   this.PlanetService.sortDistanceFromSun();
   }
 }

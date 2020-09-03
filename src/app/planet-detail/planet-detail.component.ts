@@ -18,6 +18,8 @@ export class PlanetDetailComponent implements OnInit {
   @Input()
   Planet: Planet;
 
+  public editing: boolean = false;
+
   ngOnInit(): void {
   }
 
@@ -30,5 +32,18 @@ export class PlanetDetailComponent implements OnInit {
       }
     }
 
+  }
+
+  startEditing(){
+  this.editing = true;
+  }
+
+  stopEditing(name:string, moons:number, distance:number, Url: string){
+    this.editing = false;
+    this.Planet.name = name;
+    this.Planet.moons = moons;
+    this.Planet.distanceFromSun = distance;
+    this.Planet.Url = Url;
+    this.PlanetService.sortDistanceFromSun();
   }
 }
