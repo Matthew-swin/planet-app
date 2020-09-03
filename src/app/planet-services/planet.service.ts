@@ -6,14 +6,14 @@ import {Planet} from '../planet'
 export class PlanetService {
   
   solarSystem: Planet [] = [ 
-  new Planet("Mercury", 0, 57909000,"https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/taiuwp1jeb3oj1ie_1592286163.jpeg?tr=w-1242,h-710,f-jpeg")
-  ,new Planet("Venus", 0, 108160000, "https://miro.medium.com/max/3840/1*bzki-HmkjrhNPToll10Wpw.jpeg") 
-  ,new Planet("Earth", 1, 149600000, "https://upload.wikimedia.org/wikipedia/commons/6/67/Apollo_17_Image_Of_Earth_From_Space.jpeg")
-  , new Planet("Mars", 2, 4227990000, "https://imgsrc.hubblesite.org/hvi/uploads/image_file/image_attachment/12510/full_jpg.jpg")
-  , new Planet("Jupiter", 72, 778360000, "https://imgsrc.hubblesite.org/hvi/uploads/image_file/image_attachment/19383/full_jpg.jpg")
-  , new Planet("Saturn", 62, 1433500000, "https://solarsystem.nasa.gov/system/downloadable_items/579_210_PIA21046.jpg")
-  , new Planet("Uranus", 27, 2872400000, "https://solarsystem.nasa.gov/system/downloadable_items/447_Hubble_Uranus.jpg")
-  , new Planet("Neptune", 14, 4498400000, "https://solarsystem.nasa.gov/system/downloadable_items/810_PIA01492.jpg")
+  new Planet("Mercury", 0, 57909000,"assets/Mercury.png")
+  ,new Planet("Venus", 0, 108160000, "assets/Venus.png") 
+  ,new Planet("Earth", 1, 149600000, "https://i.pinimg.com/originals/ab/a5/bd/aba5bdbb6a5985ffdf4a73d1729b609a.png")
+  , new Planet("Mars", 2, 4227990000, "https://pngimg.com/uploads/mars_planet/mars_planet_PNG23.png")
+  , new Planet("Jupiter", 72, 778360000, "https://vignette.wikia.nocookie.net/tys-imagination/images/a/af/Png-jupiter-jupiter-500.png/revision/latest?cb=20190515224257")
+  , new Planet("Saturn", 62, 1433500000, "assets/Saturn1.png")
+  , new Planet("Uranus", 27, 2872400000, "https://img.pngio.com/collection-of-free-planets-transparent-uranus-download-on-ui-ex-uranus-transparent-475_467.png")
+  , new Planet("Neptune", 14, 4498400000, "https://upload.wikimedia.org/wikipedia/commons/2/20/Neptune_cutout.png")
   ]
   constructor() { }
 
