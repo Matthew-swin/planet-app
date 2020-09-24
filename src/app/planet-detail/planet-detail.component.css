@@ -1,0 +1,18 @@
+.planet {
+display: inline-flex;
+}
+
+button {
+background-color: black;
+color: white;
+border: none;
+height: 20px;
+width: 50px;
+}
+
+input {
+color: pink;
+background-color: black;
+display: block;
+}
+

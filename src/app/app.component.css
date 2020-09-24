@@ -1,4 +1,10 @@
-:host {
+.displayedPlanets {
+display: inline-flex;
+background-image: url(/assets/background.jpg);
+background-size: fill;  
 color: red;
-background-color: blue;
+}
+
+.planet {
+display: inline-flex;
 }
